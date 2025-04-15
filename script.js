@@ -1,15 +1,12 @@
 function hora(){
-    let relogio = document.getElementById('relogio')
+  //relogio recebe a data atual
+  relogio = document.getElementById('relogio')
+  relogio = new Date
+     
+}
+  let tempo = new Date()
+  let horas = tempo.getHours();
+  let minutos = tempo.getMinutes();
+  let segundos = tempo.getsegundos();
 
-    let tempo = new Date();
-    let horas = tempo.getHours();
-    let minutos = tempo.getMinutes();
-    let segundos = tempo.getSeconds();
-
-    relogio.innerHTML = `${horas}:${minutos}:${segundos}` 
-    
-
-
-  }
-
-  hora();
+  relogio.innerHTML = `${horas}:${minutos}:${segundos}`
